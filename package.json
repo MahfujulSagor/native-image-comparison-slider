@@ -1,6 +1,6 @@
 {
   "name": "@mahfujul-sagor/native-image-comparison-slider",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Compare any two images",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -41,8 +41,10 @@
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli lib",
+    "build": "bob build",
     "prepare": "bob build",
-    "release": "release-it"
+    "release": "release-it",
+    "build-and-publish": "npm run build && npm publish"
   },
   "keywords": [
     "react-native",
@@ -63,36 +65,36 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^17.0.2",
-    "@evilmartians/lefthook": "^1.5.0",
-    "@react-native/eslint-config": "^0.73.1",
-    "@release-it/conventional-changelog": "^5.0.0",
-    "@types/jest": "^29.5.5",
-    "@types/react": "^18.2.44",
-    "commitlint": "^17.0.2",
-    "del-cli": "^5.1.0",
-    "eslint": "^8.51.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.1",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@evilmartians/lefthook": "^1.11.6",
+    "@react-native/eslint-config": "^0.78.2",
+    "@release-it/conventional-changelog": "^10.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^19.0.13",
+    "commitlint": "^19.8.0",
+    "del-cli": "^6.0.0",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
     "jest": "^29.7.0",
-    "prettier": "^3.0.3",
-    "react": "18.2.0",
-    "react-native": "0.74.5",
-    "react-native-builder-bob": "^0.30.0",
-    "release-it": "^15.0.0",
-    "typescript": "^5.2.2"
+    "prettier": "^3.5.3",
+    "react": "^19.1.0",
+    "react-native": "0.78.2",
+    "react-native-builder-bob": "^0.39.0",
+    "release-it": "^18.1.2",
+    "typescript": "^5.8.2"
   },
   "resolutions": {
-    "@types/react": "^18.2.44"
+    "@types/react": "^19.0.13"
   },
   "peerDependencies": {
-    "react": "18.2.0",
-    "react-native": "0.74.5"
+    "react": ">=17.0.0 <20.0.0",
+    "react-native": ">=0.70.0 <1.0.0"
   },
   "workspaces": [
     "example"
   ],
-  "packageManager": "npm@10.8.1",
+  "packageManager": "npm@11.2.0",
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
@@ -183,8 +185,8 @@
     "version": "0.41.0"
   },
   "dependencies": {
-    "react-native-gesture-handler": "^2.18.1",
-    "react-native-reanimated": "^3.15.0"
+    "react-native-gesture-handler": "^2.25.0",
+    "react-native-reanimated": "^3.17.2"
   },
   "directories": {
     "example": "example",

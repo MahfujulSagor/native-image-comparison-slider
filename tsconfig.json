@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
     "rootDir": ".",
-    "paths": {
-      "react-native-comparison-slider-next": ["./src/index"]
-    },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react-jsx",
+    "jsx": "react-native",
     "lib": ["ESNext"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
@@ -22,8 +19,11 @@
     "noUnusedParameters": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
     "strict": true,
     "target": "ESNext",
     "verbatimModuleSyntax": true
-  }
+  },
+  "include": ["src", "example"],
+  "exclude": ["node_modules", "lib"]
 }
